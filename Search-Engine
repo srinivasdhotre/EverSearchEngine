@@ -1,0 +1,313 @@
+<html>
+<head>
+
+<style>
+ h1 {
+    font-size: 2.5em; 
+	font-family:Agency FB;
+}
+img{
+width:110px;
+height:110px;
+
+}
+ 
+
+	
+form {
+ position: absolute;
+    left: 145px;
+	right: 145;
+    top: 150px;
+	}
+	img
+	{
+	position:left;
+	left: 120px;
+	top: 120px;
+	}
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+/* Form wrapper styling */
+.form-wrapper {
+    width: 450px;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: black;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+ 
+/* Form text input */
+ 
+.form-wrapper input {
+    width: 330px;
+    height: 40px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: white;
+    border-radius: 3px 0 0 3px;      
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'Agency FB', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #FF6600;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+   
+.form-wrapper button:hover{     
+    background: #e54040;
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;} /* remember to define focus styles! */ :focus {outline: 0;} /* remember to highlight inserts somehow! */ins {text-decoration: none;}del {text-decoration: line-through;} /* tables still need 'cellspacing="0"' in the markup */ table {border-collapse: collapse;border-spacing: 0;}
+
+
+/*---------- BODY --------------------------------*/
+
+body {
+	text-align: center;
+	background:#858566;
+	padding-bottom: 200px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*---------- Wrapper --------------------*/
+
+nav {
+	width: 100%;
+	height: 100px;
+	background: #FF9933;
+
+}
+
+ul {
+	text-align: center;
+}
+
+ul li {
+	font: 13px Letter Gothic Std, 'Letter Gothic Std';
+	cursor: pointer;
+	-webkit-transition: padding .04s linear;
+	-moz-transition: padding .04s linear;
+	-ms-transition: padding .04s linear;
+	-o-transition: padding .04s linear;
+	transition: padding .04s linear;
+}
+ul li.drop {
+	position: relative;
+}
+ul > li {
+	display: inline-block;
+}
+ul li a {
+	line-height: 80px;
+	padding: 0 20px;
+	height: 80px;
+	color: #777;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+ul li a:hover {
+	color: #eee;
+}
+
+.dropOut .triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+.dropdownContain {
+	width: 150px;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -80px; /* half of width */
+	top: -400px;
+}
+.dropOut {
+	width: 160px;
+	background: white;
+	float: left;
+	position: relative;
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+
+.dropOut ul {
+	float: left;
+	padding: 2px 1px;
+}
+.dropOut ul li {
+	text-align: left;
+	float: left;
+	width: 120px;
+	padding: 20px 0 10px 20px;
+	margin: 3px 3px;
+	color: #777;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-o-transition: background .1s ease-out;
+	transition: background .1s ease-out;
+}
+
+.dropOut ul li:hover {
+	background: #00CC99;
+}
+
+ul li:hover a { color: #000000; }
+ul li:hover .dropdownContain { top: 50px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 3; margin-top: 8px; }
+
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<img src="E.png" style="float: left;" />
+
+
+		<ul>
+			<li><a href="#">View</a></li>
+			<li class="drop">
+				<a href="#">You</a>
+				
+				<div class="dropdownContain">
+					<div class="dropOut">
+						<div class="triangle"></div>
+						<ul>
+							<a href="http://www.youtube.com"><li>youtube</li></a>
+							<a href="https://www.google.co.in/maps/@13.0168221,80.2590845,13z?hl=en"><li>maps</li></a>
+						<a href="https://www.gmail.com/"><li>mail</li></a>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			
+			</li>
+			<li><a href="#">Help</a></li>
+		</ul>
+</nav>
+
+<center>
+<form class="form-wrapper cf" method=GET action="http://www.google.com/search">
+       
+	   <input type ="text " name="q" input type="submit" value="Search" placeholder="search here"/>
+      <button type="submit">GO</button>
+	  
+	 
+    </form> 
+	<footer>
+	</footer>
+</body>
+</html>
